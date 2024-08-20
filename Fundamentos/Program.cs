@@ -89,20 +89,30 @@ internal class Program
 
         ////Console.WriteLine("O Animal " + animal1.Especie + " emitiu um Som");
 
+        //Console.WriteLine("=====================================");
+        //Gato gato = new Gato();
+        //gato.Nome = "Euclídes";
+        //Console.WriteLine(gato.Nome + " faz: ");
+        //gato.emitirSom();
+        //Console.WriteLine("=====================================");
+        //Galinha gal = new Galinha();
+        //gal.Nome = "Gertrudes";
+        //Console.WriteLine(gal.Nome + " faz: ");
+        //gal.emitirSom();
+        //Console.WriteLine("=====================================");
+        //Porco porco = new Porco();
+        //porco.Nome = "Josias";
+        //Console.WriteLine(porco.Nome + " faz: ");
+        //porco.emitirSom();
         Console.WriteLine("=====================================");
-        Gato gato = new Gato();
-        gato.Nome = "Euclídes";
-        Console.WriteLine(gato.Nome + " faz: ");
-        gato.emitirSom();
-        Console.WriteLine("=====================================");
-        Galinha gal = new Galinha();
-        gal.Nome = "Gertrudes";
-        Console.WriteLine(gal.Nome + " faz: ");
-        gal.emitirSom();
-        Console.WriteLine("=====================================");
-        Porco porco = new Porco();
-        porco.Nome = "Josias";
-        Console.WriteLine(porco.Nome + " faz: ");
-        porco.emitirSom();
+
+        // Criando instâncias dos Pokémons
+        Pokemons mudkip = new Mudkip(5, 100);
+        Pokemons aron = new Aron(7, 120);
+
+        // Realizando batalhas
+        mudkip.Battle(aron); // Mudkip ataca Aron e pode ganhar XP
+        aron.Battle(mudkip); // Aron ataca Mudkip e pode ganhar XP
+
     }
 }
